@@ -1,0 +1,128 @@
+.footer {
+  background: var(--dark-teal);
+  color: var(--text-on-dark);
+  padding: 60px 0 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(91, 192, 190, 0.1);
+}
+
+.footer-about p {
+  color: var(--text-on-dark);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 16px;
+  opacity: 0.8;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-logo img {
+  height: 44px;
+  filter: brightness(0) invert(1);
+}
+
+.footer-logo-text span:first-child {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--off-white);
+  display: block;
+  line-height: 1.2;
+}
+
+.footer-logo-text span:last-child {
+  font-size: 0.6rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--aqua);
+}
+
+.footer h4 {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--aqua);
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  display: block;
+  font-size: 0.88rem;
+  color: var(--text-on-dark);
+  opacity: 0.75;
+  padding: 5px 0;
+  transition: all var(--transition-fast);
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  color: var(--aqua);
+  padding-left: 4px;
+}
+
+.footer-contact-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 14px;
+  align-items: flex-start;
+}
+
+.footer-contact-item svg {
+  width: 18px;
+  height: 18px;
+  color: var(--aqua);
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.footer-contact-item span {
+  font-size: 0.88rem;
+  color: var(--text-on-dark);
+  opacity: 0.8;
+  line-height: 1.5;
+}
+
+.footer-contact-item a {
+  color: var(--text-on-dark);
+  opacity: 0.8;
+}
+
+.footer-contact-item a:hover {
+  color: var(--aqua);
+  opacity: 1;
+}
+
+.footer-bottom {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--text-on-dark);
+  opacity: 0.5;
+}
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}

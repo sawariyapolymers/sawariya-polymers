@@ -1,0 +1,369 @@
+/* ---- Page Header (reusable) ---- */
+.page-header {
+  background: linear-gradient(135deg, var(--dark-teal) 0%, var(--teal-navy) 100%);
+  padding: 140px 0 70px;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(91, 192, 190, 0.06) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.page-header .section-label {
+  color: var(--aqua);
+}
+
+.page-header h1 {
+  color: var(--off-white);
+  margin-bottom: 16px;
+}
+
+.page-header p {
+  color: var(--text-on-dark);
+  opacity: 0.8;
+  font-size: 1.05rem;
+  max-width: 560px;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text-on-dark);
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+
+.breadcrumb a {
+  color: var(--aqua);
+  opacity: 1;
+}
+
+.breadcrumb svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ---- About Overview ---- */
+.about-overview {
+  background: #fff;
+}
+
+.about-overview-content {
+  max-width: 100%;
+}
+
+.about-overview-content h2 {
+  margin-bottom: 20px;
+}
+
+.about-overview-content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-body);
+}
+
+/* ---- Vision Mission Values ---- */
+.vmv-section {
+  background: var(--off-white);
+}
+
+.vmv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-top: 48px;
+}
+
+.vmv-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
+  border: 1px solid rgba(14, 34, 51, 0.06);
+  transition: all var(--transition-normal);
+  text-align: center;
+}
+
+.vmv-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.vmv-card-icon {
+  width: 52px;
+  height: 52px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.vmv-card-icon.vision {
+  background: rgba(91, 192, 190, 0.1);
+}
+
+.vmv-card-icon.mission {
+  background: rgba(91, 192, 190, 0.1);
+}
+
+.vmv-card-icon.values {
+  background: rgba(91, 192, 190, 0.1);
+}
+
+.vmv-card-icon svg {
+  width: 26px;
+  height: 26px;
+  color: var(--ocean);
+}
+
+.vmv-card h3 {
+  font-family: var(--font-body);
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+  color: var(--text-dark);
+}
+
+.vmv-card p,
+.vmv-card li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.vmv-card p {
+  margin-bottom: 8px;
+}
+
+/* ---- Quality Policy ---- */
+.quality-section {
+  background: #fff;
+}
+
+.quality-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.quality-content h2 {
+  margin-bottom: 20px;
+}
+
+.quality-content p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.quality-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.quality-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--off-white);
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  border: 1px solid rgba(14, 34, 51, 0.06);
+}
+
+.quality-badge svg {
+  width: 16px;
+  height: 16px;
+  color: var(--ocean);
+}
+
+.quality-visual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.quality-stat-card {
+  background: var(--off-white);
+  border-radius: var(--radius-lg);
+  padding: 28px 20px;
+  text-align: center;
+  border: 1px solid rgba(14, 34, 51, 0.04);
+}
+
+.quality-stat-card h3 {
+  font-family: var(--font-body);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--ocean);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.quality-stat-card p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+
+/* ---- Timeline ---- */
+.timeline-section {
+  background: linear-gradient(135deg, var(--dark-teal) 0%, var(--teal-navy) 100%);
+}
+
+.timeline-section .section-label {
+  color: var(--aqua);
+}
+
+.timeline-section .section-title {
+  color: var(--off-white);
+}
+
+.timeline-section .section-subtitle {
+  color: var(--text-on-dark);
+  opacity: 0.8;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 48px;
+  padding-left: 40px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(91, 192, 190, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 40px;
+  padding-left: 32px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--aqua);
+  border: 3px solid var(--dark-teal);
+}
+
+.timeline-year {
+  display: inline-block;
+  padding: 4px 14px;
+  background: rgba(91, 192, 190, 0.12);
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--aqua);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.timeline-item h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--off-white);
+  margin-bottom: 6px;
+}
+
+.timeline-item p {
+  font-size: 0.88rem;
+  color: var(--text-on-dark);
+  opacity: 0.7;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 900px) {
+  .about-overview-grid,
+  .quality-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .vmv-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .quality-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .quality-stat-card:nth-child(2),
+  .quality-stat-card:nth-child(3) {
+    transform: none;
+  }
+}
+
+/* ---- About CTA Strip ---- */
+.about-cta-strip {
+  background: var(--off-white);
+  padding: 48px 0;
+}
+
+.about-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.about-cta-inner .btn {
+  flex-shrink: 0;
+}
+
+.about-cta-inner h3 {
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.about-cta-inner p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+
+@media (max-width: 768px) {
+  .about-cta-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+}
