@@ -48,12 +48,12 @@ const HdpeJerricans = () => {
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 5l7 7-7 7" /></svg>
             <span>Products</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 5l7 7-7 7" /></svg>
-            <span>HDPE Jerricans</span>
+            <span>HDPE Jars</span>
           </div>
           <span className="section-label">Our Products</span>
-          <h1>HDPE Jerricans</h1>
+          <h1>HDPE Jars</h1>
           <p>
-            Best-quality HDPE jerricans ensuring superior strength, leak-proof design,
+            Best-quality HDPE jars ensuring superior strength, leak-proof design,
             chemical resistance, precise molding, and reliable performance for industrial,
             food-grade, and commercial storage applications.
           </p>
@@ -68,7 +68,7 @@ const HdpeJerricans = () => {
               <p>
                 High-Density Polyethylene (HDPE) is one of the most versatile and widely used plastics.
                 It offers excellent chemical resistance, high strength-to-density ratio, and is
-                approved for food-contact applications. HDPE jerricans are the preferred choice
+                approved for food-contact applications. HDPE jars are the preferred choice
                 for storing and transporting liquids across industries.
               </p>
             </div>
@@ -188,7 +188,7 @@ const HdpeJerricans = () => {
         <div className="container">
           <div className="enquiry-strip-inner">
             <div>
-              <h3>Need HDPE Jerricans in Bulk?</h3>
+              <h3>Need HDPE Jars in Bulk?</h3>
               <p>Get competitive pricing for large orders with custom colours and branding options.</p>
             </div>
             <Link to="/contact" className="btn btn-primary">

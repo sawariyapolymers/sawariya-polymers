@@ -37,7 +37,7 @@ const products = [
   {
     title: 'Handles',
     image: handlesImg,
-    description: 'Ergonomic handles for large-format bottles and jerricans. Engineered for a strong grip, easy carrying, and seamless attachment to containers.',
+    description: 'Ergonomic handles for large-format bottles and jars. Engineered for a strong grip, easy carrying, and seamless attachment to containers.',
     specs: 'Strong grip design, Snap-fit attachment, Durable HDPE material, Fits 5L–20L containers',
   },
   {

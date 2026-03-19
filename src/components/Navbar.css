@@ -35,9 +35,23 @@
 }
 
 .navbar-logo img {
-  height: 44px;
+  height: 60px;
   width: auto;
   filter: brightness(0) invert(1);
+}
+
+.navbar-logo-text-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.navbar-logo-tm {
+  font-size: 0.45rem;
+  color: var(--off-white);
+  font-weight: 600;
+  line-height: 1;
+  margin-top: 2px;
 }
 
 .navbar-logo-text {
@@ -47,14 +61,14 @@
 
 .navbar-logo-text span:first-child {
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.65rem;
   font-weight: 700;
   color: var(--off-white);
   line-height: 1.2;
 }
 
 .navbar-logo-text span:last-child {
-  font-size: 0.65rem;
+  font-size: 0.85rem;
   font-weight: 500;
   letter-spacing: 2.5px;
   text-transform: uppercase;
@@ -219,11 +233,11 @@
   }
 
   .navbar-logo img {
-    height: 36px;
+    height: 52px;
   }
 
   .navbar-logo-text span:first-child {
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -390,10 +404,10 @@
   }
 
   .navbar-logo img {
-    height: 34px;
+    height: 48px;
   }
 
   .navbar-logo-text span:first-child {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 }

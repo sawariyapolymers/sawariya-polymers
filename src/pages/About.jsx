@@ -92,7 +92,7 @@ const About = () => {
           <div className="timeline">
             <div className="timeline-item"><div className="timeline-dot"></div><span className="timeline-year">Foundation</span><h3>Company Established</h3><p>Sawariya Polymers was founded with a vision to manufacture high-quality PET packaging products.</p></div>
             <div className="timeline-item"><div className="timeline-dot"></div><span className="timeline-year">Growth</span><h3>Manufacturing Facility Setup</h3><p>State-of-the-art manufacturing facility set up with modern machinery for PET preform production.</p></div>
-            <div className="timeline-item"><div className="timeline-dot"></div><span className="timeline-year">Expansion</span><h3>Product Range Expanded</h3><p>Added bottles, jars, caps, handles and HDPE jerricans to the product lineup, serving more industries.</p></div>
+            <div className="timeline-item"><div className="timeline-dot"></div><span className="timeline-year">Expansion</span><h3>Product Range Expanded</h3><p>Added bottles, jars, caps, handles and HDPE jars to the product lineup, serving more industries.</p></div>
             <div className="timeline-item"><div className="timeline-dot"></div><span className="timeline-year">Present</span><h3>Industry Leader</h3><p>Serving 10+ industries with 100+ products, continuously upgrading operations and expanding reach across India.</p></div>
           </div>
         </div>

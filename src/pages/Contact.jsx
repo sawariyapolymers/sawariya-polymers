@@ -67,7 +67,7 @@ const Contact = () => {
             <div className="contact-info">
               <h2>Let's Talk Packaging</h2>
               <p>
-                Whether you need PET preforms, bottles, jars, caps, or HDPE jerricans —
+                Whether you need PET preforms, bottles, jars, caps, handles or HDPE jars —
                 our team is here to help you find the perfect solution. Reach out to us
                 through any of the channels below, or fill in the enquiry form.
               </p>
@@ -216,7 +216,7 @@ const Contact = () => {
                     <option value="PET Preforms">PET Preforms</option>
                     <option value="Bottles & Jars">Bottles & Jars</option>
                     <option value="Caps & Handles">Caps & Handles</option>
-                    <option value="HDPE Jerricans">HDPE Jerricans</option>
+                    <option value="HDPE Jerricans">HDPE Jars</option>
                     <option value="Multiple Products">Multiple Products</option>
                     <option value="Custom Requirement">Custom Requirement</option>
                   </select>

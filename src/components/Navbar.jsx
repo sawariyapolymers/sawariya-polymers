@@ -35,9 +35,12 @@ const Navbar = () => {
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo" onClick={handleNavClick}>
           <img src={logo} alt="Sawariya Polymers" />
-          <div className="navbar-logo-text">
-            <span>Sawariya</span>
-            <span>Polymers</span>
+          <div className="navbar-logo-text-wrap">
+            <div className="navbar-logo-text">
+              <span>Sawariya</span>
+              <span>Polymers</span>
+            </div>
+            <sup className="navbar-logo-tm">TM</sup>
           </div>
         </Link>
 
@@ -56,7 +59,7 @@ const Navbar = () => {
               <Link to="/products/pet-preforms" onClick={handleNavClick}>PET Preforms</Link>
               <Link to="/products/bottles-jars" onClick={handleNavClick}>Bottles & Jars</Link>
               <Link to="/products/caps-handles" onClick={handleNavClick}>Caps & Handles</Link>
-              <Link to="/products/hdpe-jerricans" onClick={handleNavClick}>HDPE Jerricans</Link>
+              <Link to="/products/hdpe-jerricans" onClick={handleNavClick}>HDPE Jars</Link>
             </div>
           </div>
 
