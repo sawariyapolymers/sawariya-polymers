@@ -11,6 +11,7 @@ import CapsHandles from './pages/CapsHandles';
 import HdpeJerricans from './pages/HdpeJerricans';
 import Industries from './pages/Industries';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 import './styles/global.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/products/hdpe-jerricans" element={<HdpeJerricans />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
