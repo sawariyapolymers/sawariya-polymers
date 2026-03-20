@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <p>
               Sawariya Polymers excels in manufacturing premium PET preforms,
-              bottles, jars, caps, hanldes, and HDPE jars — ensuring strength,
+              bottles, jars, caps, handles, and HDPE jars — ensuring strength,
               clarity, precision, and food-grade quality for diverse packaging needs.
             </p>
           </div>
