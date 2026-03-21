@@ -71,7 +71,7 @@ const BottlesJars = () => {
   const current = categories.find((c) => c.id === activeType);
 
   const [formData, setFormData] = useState({
-    name: '', email: '', phone: '', company: '', product: '', message: ''
+    name: '', email: '', phone: '', company: '', product: '', quantity: '', message: ''
   });
   const [status, setStatus] = useState('');
 
@@ -92,13 +92,14 @@ const BottlesJars = () => {
           phone: formData.phone,
           company: formData.company,
           product: formData.product,
+          quantity: formData.quantity,
           message: formData.message,
           page: 'Bottles & Jars',
         },
         'fDF3N0ZZRlSsk5igA'
       );
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', company: '', product: '', quantity: '', message: '' });
     } catch {
       setStatus('error');
     }
@@ -261,6 +262,18 @@ const BottlesJars = () => {
               </div>
 
               <div className="form-group">
+                <label htmlFor="quantity">Order Quantity</label>
+                <input
+                  type="text"
+                  id="quantity"
+                  name="quantity"
+                  value={formData.quantity}
+                  onChange={handleChange}
+                  placeholder="e.g. 10,000 units / month"
+                />
+              </div>
+
+              <div className="form-group">
                 <label htmlFor="message">Your Message *</label>
                 <textarea
                   id="message"
@@ -268,7 +281,7 @@ const BottlesJars = () => {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  placeholder="Tell us about your packaging requirements, quantity, specifications..."
+                  placeholder="Tell us about your packaging requirements, specifications..."
                 ></textarea>
               </div>
 

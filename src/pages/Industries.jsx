@@ -7,12 +7,12 @@ const industries = [
   { name: 'Pharmaceutical', desc: 'ROPP preforms and specialised bottles for syrups, tonics, tablets, and healthcare supplements with tamper-evident closures.', products: ['ROPP Preforms', 'Pharma Bottles', 'ROPP Caps'] },
   { name: 'Liquor & Spirits', desc: 'PET bottles for Country Spirits (CS), Beer, Indian Made Indian Liquor (IMIL), and Indian Made Foreign Liquor (IMFL).', products: ['ROPP Preforms', 'Liquor Bottles'] },
   { name: 'Personal Care', desc: 'Bottles for baby care, oral care, skin care, hair care, fragrances, bath & shower, and sun care products.', products: ['PET Bottles', 'Screw Caps'] },
-  { name: 'Home Care', desc: 'Durable bottles for liquid dish wash, glass cleaners, disinfectants, floor cleaners, phenyle, and acid storage.', products: ['PET Bottles', 'HDPE Jars', 'Caps'] },
-  { name: 'Agro Chemicals', desc: 'Chemical-resistant bottles and jars for pesticides, herbicides, and fertilizers — built for safe storage and handling.', products: ['HDPE Jars', 'PET Bottles', 'Caps'] },
+  { name: 'Home Care', desc: 'Durable bottles for liquid dish wash, glass cleaners, disinfectants, floor cleaners, phenyle, and acid storage.', products: ['PET Bottles', 'HDPE Jars & Containers', 'Caps'] },
+  { name: 'Agro Chemicals', desc: 'Chemical-resistant bottles and jars for pesticides, herbicides, and fertilizers — built for safe storage and handling.', products: ['HDPE Jars & Containers', 'PET Bottles', 'Caps'] },
   { name: 'Dairy', desc: 'Food-grade PET bottles and jars for milk, curd, buttermilk, lassi, and other dairy products requiring freshness preservation.', products: ['PET Bottles', 'PET Jars', 'Caps'] },
   { name: 'Confectionery', desc: 'Wide-mouth PET jars for candies, cookies, namkeen, snacks, dry fruits, and other confectionery items.', products: ['PET Jars', 'Jar Caps'] },
   { name: 'Household', desc: 'Wide-mouth containers for home storage of snacks, pickles, spices, and everyday food items.', products: ['PET Jars', 'Jar Caps', 'Handles'] },
-  { name: 'Industrial Chemicals', desc: 'Heavy-duty HDPE jars and PET bottles for acids, solvents, lubricants, and industrial chemical storage.', products: ['HDPE Jars', 'PET Bottles', 'Caps'] },
+  { name: 'Industrial Chemicals', desc: 'Heavy-duty HDPE jars and PET bottles for acids, solvents, lubricants, and industrial chemical storage.', products: ['HDPE Jars & Containers', 'PET Bottles', 'Caps'] },
   { name: 'FMCG', desc: 'Versatile packaging solutions for fast-moving consumer goods — from beverages and food to personal and home care products.', products: ['PET Preforms', 'Bottles', 'Jars', 'Caps'] },
 ];
 

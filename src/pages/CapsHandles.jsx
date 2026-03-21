@@ -50,7 +50,7 @@ const products = [
 
 const CapsHandles = () => {
   const [formData, setFormData] = useState({
-    name: '', email: '', phone: '', company: '', product: '', message: ''
+    name: '', email: '', phone: '', company: '', product: '', quantity: '', message: ''
   });
   const [status, setStatus] = useState('');
 
@@ -71,13 +71,14 @@ const CapsHandles = () => {
           phone: formData.phone,
           company: formData.company,
           product: formData.product,
+          quantity: formData.quantity,
           message: formData.message,
           page: 'Caps & Handles',
         },
         'fDF3N0ZZRlSsk5igA'
       );
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', company: '', product: '', quantity: '', message: '' });
     } catch {
       setStatus('error');
     }
@@ -169,8 +170,12 @@ const CapsHandles = () => {
                 </select>
               </div>
               <div className="form-group">
+                <label htmlFor="quantity">Order Quantity</label>
+                <input type="text" id="quantity" name="quantity" value={formData.quantity} onChange={handleChange} placeholder="e.g. 10,000 units / month" />
+              </div>
+              <div className="form-group">
                 <label htmlFor="message">Your Message *</label>
-                <textarea id="message" name="message" value={formData.message} onChange={handleChange} required placeholder="Tell us about your requirements, quantity, specifications..."></textarea>
+                <textarea id="message" name="message" value={formData.message} onChange={handleChange} required placeholder="Tell us about your requirements, specifications..."></textarea>
               </div>
               <div className="form-submit">
                 <button type="submit" className="btn btn-primary" disabled={status === 'sending'}>

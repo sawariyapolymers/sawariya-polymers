@@ -14,7 +14,7 @@ const Home = () => {
     { src: petPreformsImg, alt: 'PET Preforms', label: 'PET Preforms' },
     { src: bottlesJarsImg, alt: 'Bottles & Jars', label: 'Bottles & Jars' },
     { src: capsHandlesImg, alt: 'Caps & Handles', label: 'Caps & Handles' },
-    { src: hdpeJerricansImg, alt: 'HDPE Jars', label: 'HDPE Jars' },
+    { src: hdpeJerricansImg, alt: 'HDPE Jars & Containers', label: 'HDPE Jars & Containers' },
   ];
 
   const [activeImg, setActiveImg] = useState(0);
@@ -44,8 +44,8 @@ const Home = () => {
               </h1>
               <p className="hero-description">
                 Sawariya Polymers excels in manufacturing premium PET preforms,
-                bottles, jars, caps, handles, and HDPE jars — ensuring strength, clarity,
-                and food-grade quality for diverse industries.
+                bottles, jars, caps, handles, 20 litre bubble tops, and HDPE jars and containers — ensuring
+                strength, clarity, and food-grade quality for diverse industries.
               </p>
               <div className="hero-buttons">
                 <Link to="/products/pet-preforms" className="btn btn-primary">
@@ -81,7 +81,7 @@ const Home = () => {
               </div>
               <div className="hero-stats">
                 <div className="hero-stat">
-                  <h3>4+</h3>
+                  <h3>5+</h3>
                   <p>Product Lines</p>
                 </div>
                 <div className="hero-stat">
@@ -160,7 +160,7 @@ const Home = () => {
               <div className="product-icon">
                 <img src={hdpeJerricansImg} alt="HDPE Jerricans" />
               </div>
-              <h3>HDPE Jars</h3>
+              <h3>HDPE Jars & Containers</h3>
               <p>Superior strength, chemical resistance, and leak-proof design for industrial storage.</p>
               <span className="card-arrow">
                 View Range

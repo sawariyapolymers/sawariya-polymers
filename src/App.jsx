@@ -9,6 +9,7 @@ import PetPreforms from './pages/PetPreforms';
 import BottlesJars from './pages/BottlesJars';
 import CapsHandles from './pages/CapsHandles';
 import HdpeJerricans from './pages/HdpeJerricans';
+import BubbleTop from './pages/BubbleTop';
 import Industries from './pages/Industries';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
@@ -26,6 +27,7 @@ function App() {
           <Route path="/products/pet-preforms" element={<PetPreforms />} />
           <Route path="/products/bottles-jars" element={<BottlesJars />} />
           <Route path="/products/caps-handles" element={<CapsHandles />} />
+          <Route path="/products/bubble-top" element={<BubbleTop />} />
           <Route path="/products/hdpe-jerricans" element={<HdpeJerricans />} />
           <Route path="/industries" element={<Industries />} />
           <Route path="/contact" element={<Contact />} />

@@ -59,7 +59,8 @@ const Navbar = () => {
               <Link to="/products/pet-preforms" onClick={handleNavClick}>PET Preforms</Link>
               <Link to="/products/bottles-jars" onClick={handleNavClick}>Bottles & Jars</Link>
               <Link to="/products/caps-handles" onClick={handleNavClick}>Caps & Handles</Link>
-              <Link to="/products/hdpe-jerricans" onClick={handleNavClick}>HDPE Jars</Link>
+              <Link to="/products/bubble-top" onClick={handleNavClick}>20L Bubble Top</Link>
+              <Link to="/products/hdpe-jerricans" onClick={handleNavClick}>HDPE Jars & Containers</Link>
             </div>
           </div>
 

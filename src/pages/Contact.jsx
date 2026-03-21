@@ -11,6 +11,7 @@ const Contact = () => {
     phone: '',
     company: '',
     product: '',
+    quantity: '',
     message: '',
   });
   const [status, setStatus] = useState(null);
@@ -32,13 +33,14 @@ const Contact = () => {
           phone: formData.phone,
           company: formData.company,
           product: formData.product,
+          quantity: formData.quantity,
           message: formData.message,
           page: 'Contact Page',
         },
         'fDF3N0ZZRlSsk5igA'
       );
       setStatus('success');
-      setFormData({ name: '', email: '', phone: '', company: '', product: '', message: '' });
+      setFormData({ name: '', email: '', phone: '', company: '', product: '', quantity: '', message: '' });
       setTimeout(() => setStatus(null), 5000);
     } catch {
       setStatus('error');
@@ -67,7 +69,7 @@ const Contact = () => {
             <div className="contact-info">
               <h2>Let's Talk Packaging</h2>
               <p>
-                Whether you need PET preforms, bottles, jars, caps, handles or HDPE jars —
+                Whether you need PET preforms, bottles, jars, caps, handles, 20 litre bubble tops, or HDPE jars and containers —
                 our team is here to help you find the perfect solution. Reach out to us
                 through any of the channels below, or fill in the enquiry form.
               </p>
@@ -216,10 +218,22 @@ const Contact = () => {
                     <option value="PET Preforms">PET Preforms</option>
                     <option value="Bottles & Jars">Bottles & Jars</option>
                     <option value="Caps & Handles">Caps & Handles</option>
-                    <option value="HDPE Jerricans">HDPE Jars</option>
+                    <option value="HDPE Jars & Containers">HDPE Jars & Containers</option>
                     <option value="Multiple Products">Multiple Products</option>
                     <option value="Custom Requirement">Custom Requirement</option>
                   </select>
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="quantity">Order Quantity</label>
+                  <input
+                    type="text"
+                    id="quantity"
+                    name="quantity"
+                    value={formData.quantity}
+                    onChange={handleChange}
+                    placeholder="e.g. 10,000 units / month"
+                  />
                 </div>
 
                 <div className="form-group">
@@ -230,7 +244,7 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     required
-                    placeholder="Tell us about your packaging requirements, quantity, specifications..."
+                    placeholder="Tell us about your packaging requirements, specifications..."
                   ></textarea>
                 </div>
 
